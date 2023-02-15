@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hello-world-python-scu4
+  namespace: jkopriva-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:fed2c1af92e3ffd5333a79d7ccbd1630984e52979bbeff6989fb4b22a38f0c6d
+        name: my-python
+        resources: {}
+status: {}
